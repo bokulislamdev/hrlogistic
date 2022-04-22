@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynasty</title>
+    <!--    BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- FONTAWSOME6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--    GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--    MAIN CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--    HEADER SECTION-->
+    <header class="py-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-1">
+                    <div class="logo-image d-flex justify-content-between align-items-center">
+                        <a href="#">
+                            <img src="images/logo/logo.png" alt="">
+                        </a>
+                        <div class="d-lg-none">
+                            <i class="fa-solid fa-bars" onclick="mobileClick()"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-11 d-none d-lg-block">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="menubar">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Information
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Help
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="menubar right">
+                            <ul>
+                                <li class="sub-btn">
+                                    <a href="#">Accounts
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <div class="sub-menu">
+                                        <a href="#">sub menu</a>
+                                        <a href="#">sub menu</a>
+                                        <a href="#">sub menu</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="login-button-home">
+                                        English
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--    HEADER SECTION END-->
+
+    <!--    MOBILE MENU-->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="mobile-logo mb-3">
+                <a href="#">
+                    <img src="images/logo/logo.png" alt="mobile-logo">
+                </a>
+                <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
+            </div>
+
+            <!--
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        All Category
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse" aria-labelledby="two" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body custom">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Lip Gloss</a></li>
+
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Body Lotion</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Cream</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Garnier</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+-->
+
+
+            <div class="accordion-item custom ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Home
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            About
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Discover Events
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Contact Us
+                        </button>
+                    </a>
+                </h2>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
+    <!--    MOBILE MENU END-->
+
+
+    <!--    PAGE HEAD SECTION-->
+    <section class="page-head-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Sign Up</h2>
+                    <p>Get started with HrLogistic</p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--   PAGE HEAD SECTION  -->
+
+ <!--    SIGN IN SECTION-->
+    <section class="signin-section py-5">
+        <div class="container">
+            <div class="signin-box">
+                <form action="#">
+                    <div class="input-box py-3">
+                        <input type="text" placeholder="User Name">
+                        <i data-feather="user" class="input-icon"></i>
+                    </div>
+                    <div class="input-box py-3">
+                        <input type="text" placeholder="Email">
+                        <i data-feather="mail" class="input-icon"></i>
+                    </div>
+                    
+<!--
+                     <div class="input-box py-3">
+                        <input type="password" placeholder="Contact Number">
+                        <i data-feather="phone" class="input-icon"></i>
+                        
+                    </div>
+                     <div class="input-box py-3">
+                        <input type="number" placeholder="*******">
+                        <i data-feather="smartphone" class="input-icon"></i>
+                    </div>
+-->
+                    <div class="input-box py-3">
+                        <input type="password" placeholder="Password">
+                        <i data-feather="lock" class="input-icon"></i>
+                    </div>
+                     <div class="input-box py-3">
+                        <input type="password" placeholder="Confirm Password">
+                        <i data-feather="lock" class="input-icon"></i>
+                    </div>
+                    
+                    <div class="forget-password">
+                        <a href="#">Forget Password?</a>
+                    </div>
+                    <div class="trams-condation-check d-flex py-2">
+                        <input type="checkbox" id="checkin">
+                        <label for="checkin">
+                            I have read and agree to the terms of <span>AsougPay Agreement</span>
+                        </label>
+                    </div>
+                    <div class="signin-btn py-3">
+                        <button type="submit">Sign In</button>
+                    </div>
+                     <div class="have-an-accound">
+                       <p>Don't Have an account?
+                           <a href="#"> Sign in</a>
+                       </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--    SIGN IN SECTION END-->
+
+    <!--    FOOTER-->
+    <footer class="pt-5 pb-0 pb-lg-5 flearfix">
+        <div class="container clearfix">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="footer-head">
+                            <div class="logo-image  mb-3">
+                                <a href="#">
+                                    <img src="images/logo/logo.png" alt="">
+                                </a>
+                            </div>
+                            <p class="pb-2">
+                                6757 King Fahd Rd, Al Olaya, Riyadh 12211, Saudi Arabia
+                            </p>
+
+
+                            <ul>
+                                <li class="mt-1">
+                                    <i class="footer-feather" data-feather="phone-call"></i>
+                                    <span>+966 55 117 5959 </span>
+                                </li>
+                                <li class="mt-3">
+                                    <i class="footer-feather" data-feather="mail"></i>
+                                    <span>info@Asougpay.com</span>
+                                </li>
+
+                            </ul>
+                            <div class="social-icons mt-3">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">About Us</h6>
+                            <ul>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Business Account</a></li>
+                                <li><a href="#">Legal Notice</a></li>
+                                <li><a href="#">Money Transfer Act</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Refer to Friend</a></li>
+                                <li><a href="#">AsougPay API</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">Product</h6>
+                            <ul>
+                                <li><a href="#">Online Payment</a></li>
+                                <li><a href="#">In Store Payment</a></li>
+                                <li><a href="#">Download App</a></li>
+                                <li><a href="#">AsougPay Card</a></li>
+                                <li><a href="#">AsougPay Gift card</a></li>
+                                <li><a href="#">Bank Partnership</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">Important Link</h6>
+                            <ul>
+                                <li><a href="#">Our Service</a></li>
+                                <li><a href="#">How to use</a></li>
+                                <li><a href="#">AsougPay Toturial</a></li>
+                                <li><a href="#">Our Partnership Program</a></li>
+                                <li><a href="#">Developer Section</a></li>
+                                <li><a href="#">Contact Information</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--    FOOTER END-->
+
+    <!--    COPYRIGHT-->
+    <section class="copyright-section">
+        <div class="container">
+            <div class="copyright-content py-3">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="copyright-left">
+                            <p>@copyright-2022 | All Rights Researved by AsougPay.com</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="copyright-right">
+                            <a href="#">
+                                Terms & Condition
+                            </a>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                            <a href="#">
+                                Help
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--    COPYRIGHT END-->
+
+
+    <!--    JQUERY GOOGLE HOST-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--    BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--feather icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+
+
+
+
+    <script>
+        //        MOBILE MENU
+        function mobileClick() {
+            $("#mobile-menu").toggleClass('mobileAdd');
+            $("#mobileOverlay").toggleClass('mobile-overlay');
+        }
+
+        //  feather icon
+        feather.replace()
+
+    </script>
+</body>
+
+</html>
